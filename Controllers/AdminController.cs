@@ -50,7 +50,7 @@ namespace WebApiWithRoleAuthentication.Controllers
         [HttpPost("users")]
         public async Task<IActionResult> AddUser([FromBody] Register model)
         {
-            var result = await userService.AddUserAsync(model);
+            var result = await userService.RegisterUserAsync(model);
 
             if (!result.Success)
             {
