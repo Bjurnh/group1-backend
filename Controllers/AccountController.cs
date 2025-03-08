@@ -1,3 +1,5 @@
+using Group1.BackEnd.Interfaces;
+using Group1.BackEnd.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -15,51 +17,28 @@ namespace WebApiWithRoleAuthentication.Controllers
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IUserService _userService;
         private readonly IConfiguration _configuration;
 
-        public AccountController(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+        public AccountController(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration, IUserService userService)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _configuration = configuration;
+            _userService = userService;
         }
 
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] Register model)
         {
-            if (!isValidEmail(model.Email))
+            var result = await _userService.RegisterUserAsync(model);
+
+            if (!result.Success)
             {
-                return BadRequest(new { message = "Invalid email format." });
-            }
-            var existingUser = await _userManager.FindByEmailAsync(model.Email);
-            if (existingUser != null)
-            {
-                return BadRequest(new { message = "Email already exists." });
+                return BadRequest(new { message = result.Message, errors = result.Errors });
             }
 
-            var user = new IdentityUser { UserName = model.Email, Email = model.Email, PhoneNumber = model.phoneNumber };
-
-            var result = await _userManager.CreateAsync(user, model.Password);
-
-            if (result.Succeeded)
-            {
-                if (!await _roleManager.RoleExistsAsync("User"))
-                {
-                    var roleResult = await _roleManager.CreateAsync(new IdentityRole("User"));
-                    if (!roleResult.Succeeded)
-                    {
-                        await _userManager.DeleteAsync(user);
-                        return StatusCode(500, new { message = "User role creation failed.", errors = roleResult.Errors });
-                    }
-                }
-
-                await _userManager.AddToRoleAsync(user, "User");
-
-                return Ok(new { message = "User registered successfully" });
-            }
-
-            var errors = result.Errors.Select(e => e.Description);
-            return BadRequest(new { message = "Registration Failed.", errors });
+            return Ok(new { message = result.Message });
         }
 
         [HttpPost("login")]

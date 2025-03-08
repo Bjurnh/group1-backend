@@ -1,3 +1,7 @@
+using FluentValidation;
+using Group1.BackEnd.Interfaces;
+using Group1.BackEnd.Services;
+using Group1.BackEnd.Validators;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -20,6 +24,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
+
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IValidator<Register>, UserValidator>();
+
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 {
