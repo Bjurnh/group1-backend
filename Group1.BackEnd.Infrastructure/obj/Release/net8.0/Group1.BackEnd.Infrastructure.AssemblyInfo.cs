@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Group1.BackEnd.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b88150671f04667b3443aa3889234d43bbb0a09d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a82dab184b3b8cf9a6ec8054d63cba6299fe991d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Group1.BackEnd.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Group1.BackEnd.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
