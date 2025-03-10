@@ -1,0 +1,246 @@
+[
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AccountController",
+    "Method": "Login",
+    "RelativePath": "api/Account/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebApiWithRoleAuthentication.Models.Login",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AccountController",
+    "Method": "Register",
+    "RelativePath": "api/Account/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebApiWithRoleAuthentication.Models.Register",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "Method": "GetAdminInfo",
+    "RelativePath": "api/Admin/admin-info",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "Method": "UpdateAdminInfo",
+    "RelativePath": "api/Admin/admin-info",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebApiWithRoleAuthentication.Models.UpdateUserInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "Method": "changeAdminPassword",
+    "RelativePath": "api/Admin/change-admin-password",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebApiWithRoleAuthentication.Models.ChangePassword",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "Method": "ChangeUserRole",
+    "RelativePath": "api/Admin/change-user-role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebApiWithRoleAuthentication.Models.ChangeRole",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "Method": "GetAllRoles",
+    "RelativePath": "api/Admin/roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "Method": "AddNewRole",
+    "RelativePath": "api/Admin/roles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "Method": "DeleteRole",
+    "RelativePath": "api/Admin/roles",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/Admin/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "Method": "AddUser",
+    "RelativePath": "api/Admin/users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebApiWithRoleAuthentication.Models.Register",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/Admin/users",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.UserController",
+    "Method": "ChangeUserPassword",
+    "RelativePath": "api/User/change-password",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebApiWithRoleAuthentication.Models.ChangePassword",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.UserController",
+    "Method": "DeleteUserAccount",
+    "RelativePath": "api/User/delete-user",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.UserController",
+    "Method": "GetUserInfo",
+    "RelativePath": "api/User/user-info",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiWithRoleAuthentication.Controllers.UserController",
+    "Method": "UpdateUserInfo",
+    "RelativePath": "api/User/user-info",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebApiWithRoleAuthentication.Models.UpdateUserInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
