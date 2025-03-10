@@ -1,0 +1,11 @@
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Domain\bin\Debug\net8.0\Group1.BackEnd.Domain.deps.json
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Domain\bin\Debug\net8.0\Group1.BackEnd.Domain.dll
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Domain\bin\Debug\net8.0\Group1.BackEnd.Domain.pdb
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Domain\obj\Debug\net8.0\Group1.BackEnd.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Domain\obj\Debug\net8.0\Group1.BackEnd.Domain.AssemblyInfoInputs.cache
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Domain\obj\Debug\net8.0\Group1.BackEnd.Domain.AssemblyInfo.cs
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Domain\obj\Debug\net8.0\Group1.BackEnd.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Domain\obj\Debug\net8.0\Group1.BackEnd.Domain.dll
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Domain\obj\Debug\net8.0\refint\Group1.BackEnd.Domain.dll
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Domain\obj\Debug\net8.0\Group1.BackEnd.Domain.pdb
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Domain\obj\Debug\net8.0\ref\Group1.BackEnd.Domain.dll
