@@ -9055,11 +9055,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\Group1\\group1.backEnd\\Group1.BackEnd.csproj",
-      "projectName": "Group1.BackEnd",
-      "projectPath": "C:\\Users\\Asus\\source\\repos\\Group1\\group1.backEnd\\Group1.BackEnd.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\Group1\\Group1.BackEnd.Api\\Group1.BackEnd.Api.csproj",
+      "projectName": "Group1.BackEnd.Api",
+      "projectPath": "C:\\Users\\Asus\\source\\repos\\Group1\\Group1.BackEnd.Api\\Group1.BackEnd.Api.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\source\\repos\\Group1\\group1.backEnd\\obj\\",
+      "outputPath": "C:\\Users\\Asus\\source\\repos\\Group1\\Group1.BackEnd.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

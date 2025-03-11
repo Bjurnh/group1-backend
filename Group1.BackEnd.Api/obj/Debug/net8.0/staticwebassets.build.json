@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "G/FJ4JclhuWPJcHS4Owy6ZMKq81mr0Ljz8ENBvrYfaI=",
-  "Source": "Group1.BackEnd",
-  "BasePath": "_content/Group1.BackEnd",
+  "Hash": "KyjeqI1WhEFLZIt9z4xfFFI3PhwjINOGmUSoWa3Qp7I=",
+  "Source": "Group1.BackEnd.Api",
+  "BasePath": "_content/Group1.BackEnd.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

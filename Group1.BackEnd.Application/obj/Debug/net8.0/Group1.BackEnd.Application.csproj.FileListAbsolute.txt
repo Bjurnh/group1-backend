@@ -9,6 +9,7 @@ C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Application\obj\Debug\net8.0\Gr
 C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Application\obj\Debug\net8.0\Group1.BackEnd.Application.AssemblyInfoInputs.cache
 C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Application\obj\Debug\net8.0\Group1.BackEnd.Application.AssemblyInfo.cs
 C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Application\obj\Debug\net8.0\Group1.BackEnd.Application.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Application\obj\Debug\net8.0\Group1.BackEnd.Application.sourcelink.json
 C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Application\obj\Debug\net8.0\Group1.B.1BD73653.Up2Date
 C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Application\obj\Debug\net8.0\Group1.BackEnd.Application.dll
 C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Application\obj\Debug\net8.0\refint\Group1.BackEnd.Application.dll

@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Group1.BackEnd.Api",
+    "\\Group1.BackEnd.Api\\Controllers"
   ],
-  "SelectedNode": "\\group1.backEnd.sln",
+  "SelectedNode": "\\Group1.BackEnd.Api\\Controllers\\UserController.cs",
   "PreviewInSolutionExplorer": false
 }

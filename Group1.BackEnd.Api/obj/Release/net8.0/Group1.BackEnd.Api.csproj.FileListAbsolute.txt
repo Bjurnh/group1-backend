@@ -1,0 +1,7 @@
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Api\obj\Release\net8.0\Group1.BackEnd.Api.csproj.AssemblyReference.cache
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Api\obj\Release\net8.0\Group1.BackEnd.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Api\obj\Release\net8.0\Group1.BackEnd.Api.AssemblyInfoInputs.cache
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Api\obj\Release\net8.0\Group1.BackEnd.Api.AssemblyInfo.cs
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Api\obj\Release\net8.0\Group1.BackEnd.Api.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Api\obj\Release\net8.0\Group1.BackEnd.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Api\obj\Release\net8.0\Group1.BackEnd.Api.sourcelink.json

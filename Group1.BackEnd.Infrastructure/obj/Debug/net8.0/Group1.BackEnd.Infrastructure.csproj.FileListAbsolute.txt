@@ -11,6 +11,7 @@ C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Infrastructure\obj\Debug\net8.0
 C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Infrastructure\obj\Debug\net8.0\Group1.BackEnd.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Infrastructure\obj\Debug\net8.0\Group1.BackEnd.Infrastructure.AssemblyInfo.cs
 C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Infrastructure\obj\Debug\net8.0\Group1.BackEnd.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Infrastructure\obj\Debug\net8.0\Group1.BackEnd.Infrastructure.sourcelink.json
 C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Infrastructure\obj\Debug\net8.0\Group1.B.59D22195.Up2Date
 C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Infrastructure\obj\Debug\net8.0\Group1.BackEnd.Infrastructure.dll
 C:\Users\Asus\source\repos\Group1\Group1.BackEnd.Infrastructure\obj\Debug\net8.0\refint\Group1.BackEnd.Infrastructure.dll
