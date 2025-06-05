@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AccountController",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.AccountController",
     "Method": "Login",
     "RelativePath": "api/Account/login",
     "HttpMethod": "POST",
@@ -9,14 +9,14 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "WebApiWithRoleAuthentication.Models.Login",
+        "Type": "Group1.BackEnd.Application.DTOs.LoginDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AccountController",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.AccountController",
     "Method": "Register",
     "RelativePath": "api/Account/register",
     "HttpMethod": "POST",
@@ -25,15 +25,36 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "WebApiWithRoleAuthentication.Models.Register",
+        "Type": "Group1.BackEnd.Application.DTOs.RegisterDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
-    "Method": "GetAdminInfo",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.AccountController",
+    "Method": "VerifyEmail",
+    "RelativePath": "api/Account/verify-email",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Group1.BackEnd.Api.Controllers.AdminController",
+    "Method": "GetUserInfo",
     "RelativePath": "api/Admin/admin-info",
     "HttpMethod": "POST",
     "IsController": true,
@@ -41,15 +62,15 @@
     "Parameters": [
       {
         "Name": "email",
-        "Type": "System.String",
+        "Type": "Group1.BackEnd.Application.UserDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
-    "Method": "UpdateAdminInfo",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.AdminController",
+    "Method": "UpdateUserInfo",
     "RelativePath": "api/Admin/admin-info",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -57,15 +78,15 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "WebApiWithRoleAuthentication.Models.UpdateUserInfo",
+        "Type": "Group1.BackEnd.Application.UpdateUserInfoDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
-    "Method": "changeAdminPassword",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.AdminController",
+    "Method": "ChangeUserPassword",
     "RelativePath": "api/Admin/change-admin-password",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -73,14 +94,14 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "WebApiWithRoleAuthentication.Models.ChangePassword",
+        "Type": "Group1.BackEnd.Application.ChangePasswordDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.AdminController",
     "Method": "ChangeUserRole",
     "RelativePath": "api/Admin/change-user-role",
     "HttpMethod": "POST",
@@ -89,14 +110,14 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "WebApiWithRoleAuthentication.Models.ChangeRole",
+        "Type": "Group1.BackEnd.Application.DTOs.ChangeRoleDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.AdminController",
     "Method": "GetAllRoles",
     "RelativePath": "api/Admin/roles",
     "HttpMethod": "GET",
@@ -106,7 +127,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.AdminController",
     "Method": "AddNewRole",
     "RelativePath": "api/Admin/roles",
     "HttpMethod": "POST",
@@ -114,17 +135,17 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "roleName",
-        "Type": "System.String",
+        "Name": "roleDto",
+        "Type": "Group1.BackEnd.Application.DTOs.RoleDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.AdminController",
     "Method": "DeleteRole",
-    "RelativePath": "api/Admin/roles",
+    "RelativePath": "api/Admin/roles/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -138,7 +159,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.AdminController",
     "Method": "GetAllUsers",
     "RelativePath": "api/Admin/users",
     "HttpMethod": "GET",
@@ -148,8 +169,8 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
-    "Method": "AddUser",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.AdminController",
+    "Method": "AddNewUser",
     "RelativePath": "api/Admin/users",
     "HttpMethod": "POST",
     "IsController": true,
@@ -157,16 +178,16 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "WebApiWithRoleAuthentication.Models.Register",
+        "Type": "Group1.BackEnd.Application.DTOs.RegisterDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.AdminController",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.AdminController",
     "Method": "DeleteUser",
-    "RelativePath": "api/Admin/users",
+    "RelativePath": "api/Admin/users/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -180,7 +201,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.UserController",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.UserController",
     "Method": "ChangeUserPassword",
     "RelativePath": "api/User/change-password",
     "HttpMethod": "PUT",
@@ -189,14 +210,14 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "WebApiWithRoleAuthentication.Models.ChangePassword",
+        "Type": "Group1.BackEnd.Application.ChangePasswordDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.UserController",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.UserController",
     "Method": "DeleteUserAccount",
     "RelativePath": "api/User/delete-user",
     "HttpMethod": "DELETE",
@@ -212,7 +233,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.UserController",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.UserController",
     "Method": "GetUserInfo",
     "RelativePath": "api/User/user-info",
     "HttpMethod": "POST",
@@ -228,7 +249,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiWithRoleAuthentication.Controllers.UserController",
+    "ContainingType": "Group1.BackEnd.Api.Controllers.UserController",
     "Method": "UpdateUserInfo",
     "RelativePath": "api/User/user-info",
     "HttpMethod": "PUT",
@@ -237,7 +258,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "WebApiWithRoleAuthentication.Models.UpdateUserInfo",
+        "Type": "Group1.BackEnd.Application.UpdateUserInfoDto",
         "IsRequired": true
       }
     ],

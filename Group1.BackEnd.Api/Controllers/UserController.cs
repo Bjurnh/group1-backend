@@ -2,7 +2,7 @@ using Group1.BackEnd.Application;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebApiWithRoleAuthentication.Controllers
+namespace Group1.BackEnd.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

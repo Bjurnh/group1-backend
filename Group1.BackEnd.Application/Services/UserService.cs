@@ -17,7 +17,7 @@ namespace Group1.BackEnd.Application
             if (user == null) return null;
 
             var roles = await _userManager.GetRolesAsync(user);
-            return new UserDto { Email = user.Email, PhoneNumber = user.PhoneNumber, Roles = roles.ToList() };
+            return new UserDto { Id = user.Id, Email = user.Email, PhoneNumber = user.PhoneNumber, Roles = roles.ToList() };
         }
 
         public async Task<bool> UpdateUserInfoAsync(UpdateUserInfoDto model)

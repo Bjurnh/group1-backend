@@ -12,5 +12,8 @@ namespace Group1.BackEnd.Application.Interfaces
     {
         Task<ServiceResult<string>> RegisterAsync(RegisterDto model);
         Task<ServiceResult<AuthResponseDto>> LoginAsync(LoginDto model);
+        Task<ServiceResult<bool>> DeleteUserByEmailAsync(string email);
+        Task<ServiceResult<bool>> VerifyEmailAsync(string email, string token);
+
     }
 }

@@ -26,11 +26,53 @@ namespace Group1.BackEnd.Application.Services
 
             return users.Select(user => new UserDto
             {
+                Id = user.Id,
+                UserName = user.UserName,
                 Email = user.Email,
                 PhoneNumber = user.PhoneNumber,
                 Roles = _userManager.GetRolesAsync(user).Result.ToList()
             }).ToList();
         }
+
+        public async Task<ServiceResult<string>> AddNewUserAsync(RegisterDto model)
+        {
+            var existingUser = await _userManager.FindByEmailAsync(model.Email);
+            if (existingUser != null)
+            {
+                return new ServiceResult<string>(false, "Email already exists.", null);
+            }
+
+            var user = new IdentityUser
+            {
+                UserName = model.Email,
+                Email = model.Email,
+                PhoneNumber = model.phoneNumber
+            };
+
+            var createUserResult = await _userManager.CreateAsync(user, model.Password);
+            if (!createUserResult.Succeeded)
+            {
+                return new ServiceResult<string>(false, "User creation failed.", string.Join(", ", createUserResult.Errors.Select(e => e.Description)));
+            }
+
+            if (!await _roleManager.RoleExistsAsync("User"))
+            {
+                var roleResult = await _roleManager.CreateAsync(new IdentityRole("User"));
+                if (!roleResult.Succeeded)
+                {
+                    return new ServiceResult<string>(false, "User role creation failed.", string.Join(", ", roleResult.Errors.Select(e => e.Description)));
+                }
+            }
+
+            var addToRoleResult = await _userManager.AddToRoleAsync(user, "User");
+            if (!addToRoleResult.Succeeded)
+            {
+                return new ServiceResult<string>(false, "Failed to assign role.", string.Join(", ", addToRoleResult.Errors.Select(e => e.Description)));
+            }
+
+            return new ServiceResult<string>(true, "User added successfully.", user.Id);
+        }
+
 
         public async Task<ServiceResult<string>> DeleteUserAsync(string id)
         {
@@ -96,6 +138,37 @@ namespace Group1.BackEnd.Application.Services
         {
             var roles = await _roleManager.Roles.Select(role => new RoleDto { Id = role.Id, Name = role.Name }).ToListAsync();
             return roles;
+        }
+
+        public async Task<UserDto> GetUserInfoAsync(UserDto email)
+        {
+            var user = await _userManager.FindByEmailAsync(email.Email);
+            if (user == null) return null;
+
+            var roles = await _userManager.GetRolesAsync(user);
+            return new UserDto { Id = user.Id, Email = user.Email, PhoneNumber = user.PhoneNumber, Roles = roles.ToList() };
+        }
+
+        public async Task<bool> UpdateUserInfoAsync(UpdateUserInfoDto model)
+        {
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user == null) return false;
+
+            user.Email = model.Email;
+            user.UserName = model.Email;
+            user.PhoneNumber = model.PhoneNumber;
+
+            var result = await _userManager.UpdateAsync(user);
+            return result.Succeeded;
+        }
+
+        public async Task<bool> ChangePasswordAsync(ChangePasswordDto model)
+        {
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user == null) return false;
+
+            var result = await _userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
+            return result.Succeeded;
         }
 
         public async Task<ServiceResult<string>> AddNewRoleAsync(string roleName)

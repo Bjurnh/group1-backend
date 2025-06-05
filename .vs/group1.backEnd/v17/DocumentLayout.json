@@ -1,12 +1,85 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\Group1\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE5B108A-95F2-4FE1-959A-13472372E57F}|Group1.BackEnd.Api\\Group1.BackEnd.Api.csproj|c:\\users\\asus\\source\\repos\\group1\\group1.backend.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE5B108A-95F2-4FE1-959A-13472372E57F}|Group1.BackEnd.Api\\Group1.BackEnd.Api.csproj|solutionrelative:group1.backend.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE5B108A-95F2-4FE1-959A-13472372E57F}|Group1.BackEnd.Api\\Group1.BackEnd.Api.csproj|c:\\users\\asus\\source\\repos\\group1\\group1.backend.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE5B108A-95F2-4FE1-959A-13472372E57F}|Group1.BackEnd.Api\\Group1.BackEnd.Api.csproj|solutionrelative:group1.backend.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4B6AE28-366A-4ED9-AB05-FCA2C90DDA61}|Group1.BackEnd.Application\\Group1.BackEnd.Application.csproj|c:\\users\\asus\\source\\repos\\group1\\group1.backend.application\\dtos\\updateuserinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B6AE28-366A-4ED9-AB05-FCA2C90DDA61}|Group1.BackEnd.Application\\Group1.BackEnd.Application.csproj|solutionrelative:group1.backend.application\\dtos\\updateuserinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4B6AE28-366A-4ED9-AB05-FCA2C90DDA61}|Group1.BackEnd.Application\\Group1.BackEnd.Application.csproj|c:\\users\\asus\\source\\repos\\group1\\group1.backend.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4B6AE28-366A-4ED9-AB05-FCA2C90DDA61}|Group1.BackEnd.Application\\Group1.BackEnd.Application.csproj|solutionrelative:group1.backend.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Group1\\Group1.BackEnd.Api\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Group1.BackEnd.Api\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Group1\\Group1.BackEnd.Api\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Group1.BackEnd.Api\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T13:21:35.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateUserInfoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Group1\\Group1.BackEnd.Application\\DTOs\\UpdateUserInfoDto.cs",
+              "RelativeDocumentMoniker": "Group1.BackEnd.Application\\DTOs\\UpdateUserInfoDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Group1\\Group1.BackEnd.Application\\DTOs\\UpdateUserInfoDto.cs",
+              "RelativeToolTip": "Group1.BackEnd.Application\\DTOs\\UpdateUserInfoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T12:30:52.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Group1\\Group1.BackEnd.Api\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Group1.BackEnd.Api\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Group1\\Group1.BackEnd.Api\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Group1.BackEnd.Api\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwDMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T12:06:19.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Group1\\Group1.BackEnd.Application\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "Group1.BackEnd.Application\\DTOs\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Group1\\Group1.BackEnd.Application\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "Group1.BackEnd.Application\\DTOs\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T12:21:44.59Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
